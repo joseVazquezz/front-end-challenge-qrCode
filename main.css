@@ -1,6 +1,6 @@
 :root{
     --White: hsl(0, 0%, 100%);
-    --Light-gray: hsl(212, 45%, 89%);
+    --Light-gray: hsl(210, 10%, 57%);
     --Grayish-blue: hsl(220, 15%, 55%);
     --Dark-blue: hsl(218, 44%, 22%);
     --font: 'Outfit', sans-serif;
@@ -12,8 +12,56 @@
 *::before {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
+html {
+    margin: 0 auto;
+    font-size: 62.5%;/*1rem = 10px */
+     box-sizing: border-box;
+}
+/* END CSS RESET  */
 body {
     font-family: var(--font);
+    min-height: 100vh;
+    background-color: var(--Grayish-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+img {
+max-width: 100%;
+}
+
+.main-card {
+    background-color: var(--White);
+    text-align: center;
+    max-width: 30rem;
+    max-height: auto;
+    padding: 1rem;
+    border-radius: 1.5rem;
+}
+.img-section {
+    margin: 0 auto;
+}
+.img-section img {
+    border-radius: 1.5rem;
+
+}
+.info-section {
+    padding-top: 1.8rem;
+}
+.info-section__header{
+    font-size: 20px;
+    padding-bottom: 2rem;
+    color: var(--Dark-blue);
+    font-weight: 700;
+}
+.info-section__paragraph {
+padding-bottom: 2rem;
+font-size: 15px;
+color: var(--Light-gray);
+font-weight: 400;
+}
+
+
+
